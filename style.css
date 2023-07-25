@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.splash-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.batman-title {
+  position: relative;
+}
+
+.batman-title h1 {
+  font-size: 96px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-shadow: 5px 5px 0 #ffdb58;
+  margin: 0;
+  opacity: 0;
+  animation: splash 2s ease-in-out forwards;
+}
+
+.batman-logo {
+  margin-left: 50px;
+  animation: splash 2s ease-in-out forwards;
+}
+
+.batman-logo img {
+  max-width: 200px;
+  filter: brightness(150%);
+}
+
+@keyframes splash {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.Batman-pic{
+  height: 240px;
+  width: 240px;
+}
+.Bat-king{
+  height: 240px;
+  width: 240px;
+}
+.Bat-Queen{
+  height: 240px;
+  width: 240px;
+}
